@@ -1,0 +1,114 @@
+.nav-container {
+  width: 100%;
+  background-color: white;
+  /* z-index: 22; */
+  margin-top: 10px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 3rem;
+  margin: auto;
+  padding-top: 0.5rem;
+  /* z-index: 22; */
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  gap: 1rem;
+}
+
+.nav-list-left {
+  margin-left: 4rem;
+  /* align-items: center; */
+}
+
+.nav-list-right {
+  margin-left: 4rem;
+  margin-right: 1rem;
+  /* align-items: center; */
+}
+
+.nav-logo {
+  width: 5rem;
+  margin-left: 4rem;
+}
+
+.connect-wallet-btn {
+  background-color: #4caf50;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/**  ------ */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+/**  ------ */
+@media screen and (max-width: 425px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-logo {
+    margin-left: 30%;
+    /* margin-right: 50%; */
+  }
+
+  /**------------------*/
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  /**------------------*/
+}

@@ -1,0 +1,92 @@
+.table-header-container {
+  width: 100%;
+  padding: 0;
+  height: fit-content;
+}
+.currency-info-lists {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246))
+    rgb(255, 255, 255);
+  padding: 1rem 15rem;
+  height: 12rem;
+  /* border: 1px solid red; */
+}
+
+.currency-info-list {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+.dropdown-header {
+  display: none;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .currency-info-lists {
+    padding: 0 10rem;
+  }
+
+  .currency-info-list {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .currency-info-lists {
+    height: 8rem;
+  }
+
+  .currency-info:nth-child(2) {
+    text-align: left;
+  }
+
+  .currency-info-list {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 425px) {
+  .currency-info-lists {
+    display: none;
+  }
+
+  .dropdown-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0%;
+    margin-top: 5px;
+
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+  }
+  .dropdown-header p {
+    padding: 5px;
+    font-size: 17px;
+    color: white;
+  }
+
+  .l-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  .name {
+    padding: 2px;
+    margin-left: 5px;
+    font-size: 10px;
+    color: white;
+  }
+  .value {
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 10px;
+    color: white;
+  }
+  .horizontal {
+    width: 85%;
+    color: black;
+  }
+}
